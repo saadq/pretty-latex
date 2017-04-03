@@ -1,0 +1,31 @@
+{
+  "name": "pretty-latex",
+  "version": "0.1.0",
+  "description": "A beautifier for LaTeX documents.",
+  "main": "index.js",
+  "repository": "saadq/pretty-latex",
+  "author": {
+    "name": "Saad Quadri",
+    "email": "saad@saadq.com",
+    "url": "http://saadq.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "lint": "standard | snazzy",
+    "fix": "standard --fix",
+    "test": "npm run --silent lint"
+  },
+  "devDependencies": {
+    "snazzy": "^6.0.0",
+    "standard": "^9.0.2"
+  },
+  "dependencies": {
+    "fs-extra": "^2.1.2",
+    "string-to-stream": "^1.1.0",
+    "temp": "^0.8.3",
+    "through2": "^2.0.3"
+  }
+}
