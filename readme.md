@@ -12,7 +12,7 @@ or
 npm install pretty-latex
 ```
 
-You will also need to make sure you have [latexindent](https://github.com/cmhughes/latexindent.pl) installed on your system.
+You will also need to make sure you have [latexindent](https://www.ctan.org/pkg/latexindent?lang=en) installed on your system.
 
 ## Usage
 ```js
