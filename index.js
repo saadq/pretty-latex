@@ -15,7 +15,7 @@ const fs = require('fs')
  *
  * @return {DestroyableTransform}
  */
-function beautify (src) {
+function beautify(src) {
   const output = through()
 
   temp.mkdir('latexindent', (err, tempPath) => {

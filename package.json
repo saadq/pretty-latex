@@ -14,13 +14,13 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "lint": "standard | snazzy",
-    "fix": "standard --fix",
+    "lint": "blyss | snazzy",
+    "fix": "blyss --fix",
     "test": "npm run --silent lint"
   },
   "devDependencies": {
-    "snazzy": "^6.0.0",
-    "standard": "^9.0.2"
+    "blyss": "^1.0.1",
+    "snazzy": "^6.0.0"
   },
   "dependencies": {
     "fs-extra": "^2.1.2",
