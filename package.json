@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "A beautifier for LaTeX documents.",
   "main": "index.js",
+  "types": "./index.d.ts",
   "repository": "saadq/pretty-latex",
   "author": {
     "name": "Saad Quadri",
