@@ -23,8 +23,7 @@
     "snazzy": "^6.0.0"
   },
   "dependencies": {
-    "fs-extra": "^2.1.2",
-    "string-to-stream": "^1.1.0",
+    "string-to-stream": "^3.0.1",
     "temp": "^0.8.3",
     "through2": "^2.0.3"
   }
