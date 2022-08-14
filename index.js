@@ -3,7 +3,6 @@
 const strToStream = require('string-to-stream')
 const spawn = require('child_process').spawn
 const through = require('through2')
-const fse = require('fs-extra')
 const temp = require('temp')
 const path = require('path')
 const fs = require('fs')
@@ -22,7 +21,7 @@ function beautify(src) {
     const handleErrors = (err) => {
       output.emit('error', err)
       output.destroy()
-      fse.removeSync(tempPath)
+      fs.rmSync(tempPath, {recursive: true, force: true})
     }
 
     if (err) {
@@ -67,7 +66,7 @@ function beautify(src) {
       const texOutputFile = fs.createReadStream(texOutputPath)
       texOutputFile.pipe(output)
 
-      texOutputFile.on('close', () => fse.removeSync(tempPath))
+      texOutputFile.on('close', () => fs.rmSync(tempPath, {recursive: true, force: true}))
     })
   })
 
